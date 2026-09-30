@@ -503,7 +503,6 @@ rules:
   - RULE-SET,private,本地直连
   - RULE-SET,private_ip,本地直连,no-resolve
   - RULE-SET,steam_asn,本地直连,no-resolve
-  - DOMAIN,auroraoss.com,本地直连 # 避免 Aurora Store 无法匿名
 
   # 拦截规则
   - RULE-SET,adblockmihomo,广告拦截
@@ -527,6 +526,7 @@ rules:
   - RULE-SET,telegram_ip,Telegram,no-resolve
   - RULE-SET,x,X
   - RULE-SET,x_ip,X,no-resolve
+  - DOMAIN,auroraoss.com,手动选择
 
   # 兜底规则
   - RULE-SET,geolocation-cn,本地直连
