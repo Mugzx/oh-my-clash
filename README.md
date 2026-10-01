@@ -1,4 +1,4 @@
-# MyClash
+# OhMyClash
 
 > 越是常用越要细分，不常用只保证可用。
 
@@ -7,7 +7,7 @@
 使用方法：复制链接，导入代理客户端
 
 ```txt
-https://raw.githubusercontent.com/Mugzx/MyClash/main/Config/myclash.yaml
+https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/clash.yaml
 ```
 
 ### 备注
