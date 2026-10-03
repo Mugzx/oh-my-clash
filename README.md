@@ -4,7 +4,7 @@
 
 ## 配置文件
 
-使用方法：复制链接，导入代理客户端
+使用方法：复制链接，导入或上传到代理客户端
 
 ```txt
 https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/clash.yaml
