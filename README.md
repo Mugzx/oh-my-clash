@@ -24,16 +24,12 @@ https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/clash.yaml
 - `自动选择`
 - `负载均衡`
 - `AI`
-- `Discord`
-- `FCM`
 - `Games`
 - `GitHub`
+- `YouTube`
 - `Google`
 - `Microsoft`
-- `PayPal`
-- `Spotify`
 - `Telegram`
-- `YouTube`
 - `X`
 - `手动选择`
 - `本地直连`
