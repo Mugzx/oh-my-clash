@@ -50,13 +50,13 @@ profile:
   store-fake-ip: true
 
 # 国内外 DNS 定义
-chinaDNS: &chinaDNS ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
+chinaDNS: &chinaDNS ['system', 'https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 foreignDNS: &foreignDNS ['https://dns.cloudflare.com/dns-query#默认代理', 'https://dns.google/dns-query#默认代理']
 
 dns:
   enable: true
   cache-algorithm: arc
-  listen: '[::]:7874'
+  listen: '[::]:1053'
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-range6: fdfe:dcba:9876::1/64
