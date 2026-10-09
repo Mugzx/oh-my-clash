@@ -122,7 +122,7 @@ group_common:
       include-all: true,
       exclude-type: 'DIRECT',
       hidden: true,
-      icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png',
+      icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Auto.png',
     }
 
   group_common_load:
@@ -137,7 +137,7 @@ group_common:
       include-all: true,
       exclude-type: 'DIRECT',
       hidden: true,
-      icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png',
+      icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png',
     }
 
 # 通用代理策略组
@@ -191,7 +191,7 @@ proxy-groups:
     <<: *group_common_select
     proxies:
       ['香港', '日本', '新加坡', '美利坚', '低倍率节点', '高倍率节点', '其他节点', '自动选择', '手动选择', '负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Proxy.png'
 
   - name: '自动选择'
     <<: *group_common_auto
@@ -203,42 +203,42 @@ proxy-groups:
   - name: 'AI'
     <<: [*group_common_select, *proxies_default]
     default-selected: '美利坚'
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/AI.png'
 
   - name: 'Games'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Game.png'
 
   - name: 'GitHub'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/GitHub.png'
 
   - name: 'Google'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png'
 
   - name: 'Microsoft'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png'
 
   - name: 'Telegram'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Telegram.png'
 
   - name: 'X'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/X.png'
 
   - name: 'YouTube'
     <<: [*group_common_select, *proxies_default]
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/YouTube.png'
 
   # 地区策略组
   - name: '香港'
     <<: [*group_common_select, *HK_filter]
     include-all: true
     proxies: ['香港-自动选择', '香港-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png'
   - name: '香港-自动选择'
     <<: [*group_common_auto, *HK_filter]
   - name: '香港-负载均衡'
@@ -248,7 +248,7 @@ proxy-groups:
     <<: [*group_common_select, *JP_filter]
     include-all: true
     proxies: ['日本-自动选择', '日本-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Japan.png'
   - name: '日本-自动选择'
     <<: [*group_common_auto, *JP_filter]
   - name: '日本-负载均衡'
@@ -258,7 +258,7 @@ proxy-groups:
     <<: [*group_common_select, *SG_filter]
     include-all: true
     proxies: ['新加坡-自动选择', '新加坡-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Singapore.png'
   - name: '新加坡-自动选择'
     <<: [*group_common_auto, *SG_filter]
   - name: '新加坡-负载均衡'
@@ -268,7 +268,7 @@ proxy-groups:
     <<: [*group_common_select, *US_filter]
     include-all: true
     proxies: ['美利坚-自动选择', '美利坚-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/United_States.png'
   - name: '美利坚-自动选择'
     <<: [*group_common_auto, *US_filter]
   - name: '美利坚-负载均衡'
@@ -278,7 +278,7 @@ proxy-groups:
     <<: [*group_common_select, *low_filter]
     include-all: true
     proxies: ['低倍率节点-自动选择', '低倍率节点-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Available_1.png'
   - name: '低倍率节点-自动选择'
     <<: [*group_common_auto, *low_filter]
   - name: '低倍率节点-负载均衡'
@@ -288,7 +288,7 @@ proxy-groups:
     <<: [*group_common_select, *high_filter]
     include-all: true
     proxies: ['高倍率节点-自动选择', '高倍率节点-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Airport.png'
   - name: '高倍率节点-自动选择'
     <<: [*group_common_auto, *high_filter]
   - name: '高倍率节点-负载均衡'
@@ -298,7 +298,7 @@ proxy-groups:
     <<: [*group_common_select, *exclude_filter]
     include-all: true
     proxies: ['其他节点-自动选择', '其他节点-负载均衡']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Server.png'
   - name: '其他节点-自动选择'
     <<: [*group_common_auto, *exclude_filter]
   - name: '其他节点-负载均衡'
@@ -309,23 +309,23 @@ proxy-groups:
     <<: *group_common_select
     include-all: true
     exclude-type: 'DIRECT'
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Static.png'
 
   - name: '本地直连'
     <<: *group_common_select
     proxies: ['DIRECT-DUAL', 'DIRECT-IPv4-PREF', 'DIRECT-IPv6-PREF']
     url: 'https://connectivitycheck.platform.hicloud.com/generate_204'
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Direct.png'
 
   - name: '广告拦截'
     <<: *group_common_select
     proxies: ['REJECT', 'REJECT-DROP', 'PASS']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png'
 
   - name: '漏网之鱼'
     <<: *group_common_select
     proxies: ['本地直连', '默认代理', '手动选择']
-    icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Puzzle.png'
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Puzzle.png'
 
 # 规则集通用配置
 rule_providers_common:
@@ -337,126 +337,126 @@ rule-providers:
   # 特殊规则集
   adblockmihomo:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomo.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/217heidai/adblockfilters@main/rules/adblockmihomo.mrs'
     path: './providers/rule/adblockmihomo.mrs'
     path-in-bundle: 'geo/geosite/category-ads-all.mrs'
   connectivity-check:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/connectivity-check.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/connectivity-check.mrs'
     path: './providers/rule/connectivity-check.mrs'
     path-in-bundle: 'geo/geosite/connectivity-check.mrs'
   ntp:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/category-ntp.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/category-ntp.mrs'
     path: './providers/rule/ntp.mrs'
     path-in-bundle: 'geo/geosite/category-ntp.mrs'
 
   # 直连规则集
   games_cn:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/category-games@cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/category-games@cn.mrs'
     path: './providers/rule/games@cn.mrs'
     path-in-bundle: 'geo/geosite/category-games@cn.mrs'
   googlefcm:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/googlefcm.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/googlefcm.mrs'
     path: './providers/rule/googlefcm.mrs'
     path-in-bundle: 'geo/geosite/googlefcm.mrs'
   microsoft_cn:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/microsoft@cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/microsoft@cn.mrs'
     path: './providers/rule/microsoft@cn.mrs'
     path-in-bundle: 'geo/geosite/microsoft@cn.mrs'
   steam_asn:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/asn/AS32590.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/asn/AS32590.mrs'
     path: './providers/rule/steam_asn.mrs'
     path-in-bundle: 'asn/AS32590.mrs'
   geolocation-cn:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/geolocation-cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/geolocation-cn.mrs'
     path: './providers/rule/geolocation-cn.mrs'
     path-in-bundle: 'geo/geosite/geolocation-cn.mrs'
   cn:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/cn.mrs'
     path: './providers/rule/cn.mrs'
     path-in-bundle: 'geo/geosite/cn.mrs'
   cn_ip:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/cn.mrs'
     path: './providers/rule/cn_ip.mrs'
     path-in-bundle: 'geo/geoip/cn.mrs'
   private_ip:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/private.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/private.mrs'
     path: './providers/rule/private_ip.mrs'
     path-in-bundle: 'geo/geoip/private.mrs'
 
   # 海外规则集
   ai:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/category-ai-!cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/category-ai-!cn.mrs'
     path: './providers/rule/ai.mrs'
     path-in-bundle: 'geo/geosite/category-ai-!cn.mrs'
   games:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/category-games-!cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/category-games-!cn.mrs'
     path: './providers/rule/games.mrs'
     path-in-bundle: 'geo/geosite/category-games-!cn.mrs'
   github:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs'
     path: './providers/rule/github.mrs'
     path-in-bundle: 'geo/geosite/github.mrs'
   youtube:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/youtube.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/youtube.mrs'
     path: './providers/rule/youtube.mrs'
     path-in-bundle: 'geo/geosite/youtube.mrs'
   google:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/google.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/google.mrs'
     path: './providers/rule/google.mrs'
     path-in-bundle: 'geo/geosite/google.mrs'
   google_ip:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/google.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/google.mrs'
     path: './providers/rule/google_ip.mrs'
     path-in-bundle: 'geo/geoip/google.mrs'
   microsoft:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/microsoft.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/microsoft.mrs'
     path: './providers/rule/microsoft.mrs'
     path-in-bundle: 'geo/geosite/microsoft.mrs'
   microsoft_ip:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/microsoft.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/microsoft.mrs'
     path: './providers/rule/microsoft_ip.mrs'
     path-in-bundle: 'geo/geoip/microsoft.mrs'
   telegram:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/telegram.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/telegram.mrs'
     path: './providers/rule/telegram.mrs'
     path-in-bundle: 'geo/geosite/telegram.mrs'
   telegram_ip:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/telegram.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/telegram.mrs'
     path: './providers/rule/telegram_ip.mrs'
     path-in-bundle: 'geo/geoip/telegram.mrs'
   x:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/twitter.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/twitter.mrs'
     path: './providers/rule/x.mrs'
     path-in-bundle: 'geo/geosite/twitter.mrs'
   x_ip:
     <<: *rule_providers_ip
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/twitter.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/twitter.mrs'
     path: './providers/rule/x_ip.mrs'
     path-in-bundle: 'geo/geoip/twitter.mrs'
   geolocation-!cn:
     <<: *rule_providers_domain
-    url: 'https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/geolocation-!cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/geolocation-!cn.mrs'
     path: './providers/rule/geolocation-!cn.mrs'
     path-in-bundle: 'geo/geosite/geolocation-!cn.mrs'
 

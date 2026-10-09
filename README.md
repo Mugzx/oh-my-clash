@@ -10,6 +10,13 @@
 https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/clash.yaml
 ```
 
+<details>
+<summary>国内加速链接</summary>
+```txt
+https://cdn.jsdmirror.com/gh/Mugzx/oh-my-clash@main/clash.yaml
+```
+</details>
+
 ### 备注
 
 > [!WARNING]
@@ -67,3 +74,4 @@ https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/clash.yaml
 - [217heidai/adblockfilters](https://github.com/217heidai/adblockfilters)
 - [Koolson/Qure](https://github.com/Koolson/Qure)
 - [AIsouler/MyClash](https://github.com/AIsouler/MyClash)
+- [jsdmirror/JSDMirror](https://github.com/jsdmirror/JSDMirror)
