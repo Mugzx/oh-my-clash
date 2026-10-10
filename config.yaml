@@ -60,12 +60,12 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-range6: fdfe:dcba:9876::1/64
-  fake-ip-filter: ['rule-set:connectivity-check', 'rule-set:geolocation-cn', 'rule-set:ntp']
+  fake-ip-filter: ['rule-set:connectivity-check', 'rule-set:geolocation-cn', 'rule-set:ntp', 'rule-set:private']
   use-hosts: true
   use-system-hosts: true
   nameserver: *foreignDNS
   nameserver-policy:
-    'rule-set:cn': *chinaDNS
+    'rule-set:cn,private': *chinaDNS
   proxy-server-nameserver: *chinaDNS
   direct-nameserver: *chinaDNS
 
@@ -367,6 +367,16 @@ rule-providers:
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/microsoft@cn.mrs'
     path: './providers/rule/microsoft@cn.mrs'
     path-in-bundle: 'geo/geosite/microsoft@cn.mrs'
+  private:
+    <<: *rule_providers_domain
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/private.mrs'
+    path: './providers/rule/private.mrs'
+    path-in-bundle: 'geo/geosite/private.mrs'
+  private_ip:
+    <<: *rule_providers_ip
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/private.mrs'
+    path: './providers/rule/private_ip.mrs'
+    path-in-bundle: 'geo/geoip/private.mrs'
   steam_asn:
     <<: *rule_providers_ip
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/asn/AS32590.mrs'
@@ -387,11 +397,6 @@ rule-providers:
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/cn.mrs'
     path: './providers/rule/cn_ip.mrs'
     path-in-bundle: 'geo/geoip/cn.mrs'
-  private_ip:
-    <<: *rule_providers_ip
-    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/private.mrs'
-    path: './providers/rule/private_ip.mrs'
-    path-in-bundle: 'geo/geoip/private.mrs'
 
   # 海外规则集
   ai:
@@ -466,6 +471,8 @@ rules:
   - RULE-SET,games_cn,本地直连 # 已包含 steam 下载域名
   - RULE-SET,googlefcm,本地直连
   - RULE-SET,microsoft_cn,本地直连
+  - RULE-SET,private,本地直连
+  - RULE-SET,private_ip,本地直连,no-resolve
   - RULE-SET,steam_asn,本地直连,no-resolve
 
   # 拦截规则
@@ -491,5 +498,4 @@ rules:
   - RULE-SET,geolocation-cn,本地直连
   - RULE-SET,geolocation-!cn,默认代理
   - RULE-SET,cn_ip,本地直连
-  - RULE-SET,private_ip,本地直连
   - MATCH,漏网之鱼
