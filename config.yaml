@@ -465,11 +465,11 @@ rule-providers:
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/twitter.mrs'
     path: './providers/rule/x_ip.mrs'
     path-in-bundle: 'geo/geoip/twitter.mrs'
-  geolocation-!cn:
+  gfw:
     <<: *rule_providers_domain
-    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/geolocation-!cn.mrs'
-    path: './providers/rule/geolocation-!cn.mrs'
-    path-in-bundle: 'geo/geosite/geolocation-!cn.mrs'
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/gfw.mrs'
+    path: './providers/rule/gfw.mrs'
+    path-in-bundle: 'geo/geosite/gfw.mrs'
 
 # 自定义规则配置
 rules:
@@ -503,6 +503,6 @@ rules:
 
   # 兜底规则
   - RULE-SET,geolocation-cn,本地直连
-  - RULE-SET,geolocation-!cn,默认代理
+  - RULE-SET,gfw,默认代理
   - RULE-SET,cn_ip,本地直连
   - MATCH,漏网之鱼
