@@ -499,6 +499,7 @@ rules:
   - RULE-SET,telegram_ip,Telegram,no-resolve
   - RULE-SET,x,X
   - RULE-SET,x_ip,X,no-resolve
+  - DOMAIN-KEYWORD,mcp,AI
 
   # 兜底规则
   - RULE-SET,geolocation-cn,本地直连
