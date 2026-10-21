@@ -1,4 +1,4 @@
-# OhMyMihomo
+# OhMyClash
 
 > 越是常用越要细分，不常用只保证可用。
 
@@ -7,14 +7,14 @@
 使用方法：复制链接，导入或上传到代理客户端
 
 ```txt
-https://raw.githubusercontent.com/Mugzx/oh-my-mihomo/main/config.yaml
+https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/config.yaml
 ```
 
 <details>
 <summary>国内加速链接</summary>
 
 ```txt
-https://cdn.jsdmirror.com/gh/Mugzx/oh-my-mihomo@main/config.yaml
+https://cdn.jsdmirror.com/gh/Mugzx/oh-my-clash@main/config.yaml
 ```
 
 </details>
