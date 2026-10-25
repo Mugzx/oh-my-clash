@@ -4,7 +4,7 @@ proxy_providers_common:
     type: http,
     interval: 86400,
     exclude-type: 'DIRECT|REJECT|REMATCH',
-    health-check: { enable: true, url: https://connectivitycheck.gstatic.com/generate_204, interval: 600 },
+    health-check: { enable: true, url: https://connectivitycheck.gstatic.com/generate_204, interval: 600, lazy: true },
   }
 
 # 全局过滤节点
@@ -29,20 +29,19 @@ proxies:
   - { name: 'IPv6-PREF', type: direct, ip-version: ipv6-prefer }
 
 # 基础全局配置
+allow-lan: true
+bind-address: '*'
 mode: rule
 log-level: silent
-unified-delay: true
-tcp-concurrent: true
-external-ui-url: 'https://codeload.github.com/Zephyruso/zashboard/zip/refs/heads/gh-pages-cdn-fonts'
-external-ui: ui
-external-ui-name: zashboard
-allow-lan: true
-mixed-port: 7892
-external-controller: '[::]:9090'
-find-process-mode: strict
-bind-address: '*'
 keep-alive-interval: 15
 keep-alive-idle: 600
+external-controller: '[::]:9090'
+external-ui: ui
+external-ui-name: zashboard
+external-ui-url: 'https://codeload.github.com/Zephyruso/zashboard/zip/refs/heads/gh-pages-cdn-fonts'
+mixed-port: 7892
+unified-delay: true
+tcp-concurrent: true
 
 profile:
   store-selected: true
@@ -105,6 +104,7 @@ group_common:
       type: select,
       url: 'https://connectivitycheck.gstatic.com/generate_204',
       interval: 600,
+      lazy: true,
       empty-fallback: REJECT,
       timeout: 3000,
       max-failed-times: 3,
@@ -115,6 +115,7 @@ group_common:
       type: url-test,
       url: 'https://connectivitycheck.gstatic.com/generate_204',
       interval: 600,
+      lazy: true,
       tolerance: 50,
       empty-fallback: REJECT,
       timeout: 3000,
@@ -130,6 +131,7 @@ group_common:
       type: load-balance,
       url: 'https://connectivitycheck.gstatic.com/generate_204',
       interval: 600,
+      lazy: true,
       strategy: 'sticky-sessions',
       empty-fallback: REJECT,
       timeout: 3000,
