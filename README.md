@@ -35,11 +35,11 @@ https://cdn.jsdmirror.com/gh/Mugzx/oh-my-clash@main/config.yaml
 - `AI`
 - `Games`
 - `GitHub`
-- `YouTube`
 - `Google`
 - `Microsoft`
 - `Telegram`
 - `X`
+- `YouTube`
 - `手动选择`
 - `本地直连`
 - `广告拦截`
@@ -60,8 +60,8 @@ https://cdn.jsdmirror.com/gh/Mugzx/oh-my-clash@main/config.yaml
 - `高倍率节点`
 
 > 自动识别节点倍率，并分别归类为独立节点组：
-> - 高倍率节点（倍率 >1）
 > - 低倍率节点（倍率 ≤0.9）
+> - 高倍率节点（倍率 >1）
 
 - `其它节点`
 
