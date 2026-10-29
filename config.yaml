@@ -95,7 +95,7 @@ tun:
   dns-hijack: ['any:53', 'tcp://any:53']
   strict-route: true
   endpoint-independent-nat: true
-  disable-icmp-forwarding: true
+  congestion-controller: bbr3
 
 # 策略组通用配置
 group_common:
