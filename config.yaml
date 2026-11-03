@@ -33,8 +33,10 @@ allow-lan: true
 bind-address: '*'
 mode: rule
 log-level: silent
+ipv6: true
 keep-alive-interval: 15
 keep-alive-idle: 600
+find-process-mode: strict
 external-controller: '[::]:9090'
 external-ui: ui
 external-ui-name: zashboard
@@ -55,6 +57,7 @@ dns:
   enable: true
   cache-algorithm: arc
   listen: '[::]:1053'
+  ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-range6: fdfe:dcba:9876::1/64
