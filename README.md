@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/Mugzx/oh-my-clash/main/config.yaml
 <summary>国内加速链接</summary>
 
 ```txt
-https://cdn.jsdmirror.com/gh/Mugzx/oh-my-clash@main/config.yaml
+https://cdn.jsdmirror.cn/gh/Mugzx/oh-my-clash@main/config.yaml
 ```
 
 </details>
@@ -75,5 +75,5 @@ https://cdn.jsdmirror.com/gh/Mugzx/oh-my-clash@main/config.yaml
 - [appshubcc/bett-rules](https://github.com/appshubcc/bett-rules)
 - [217heidai/adblockfilters](https://github.com/217heidai/adblockfilters)
 - [Koolson/Qure](https://github.com/Koolson/Qure)
-- [AIsouler/MyClash](https://github.com/AIsouler/MyClash)
 - [jsdmirror/JSDMirror](https://github.com/jsdmirror/JSDMirror)
+- [AIsouler/MyClash](https://github.com/AIsouler/MyClash)
