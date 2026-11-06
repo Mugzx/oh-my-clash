@@ -61,7 +61,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-range6: fdfe:dcba:9876::1/64
-  fake-ip-filter: ['rule-set:connectivity-check', 'rule-set:geolocation-cn', 'rule-set:ntp', 'rule-set:private']
+  fake-ip-filter: ['rule-set:cn', 'rule-set:connectivity-check', 'rule-set:ntp', 'rule-set:private']
   use-hosts: true
   use-system-hosts: true
   nameserver: *foreignDNS
@@ -489,7 +489,7 @@ rules:
 
   # 拦截规则
   - RULE-SET,adblockmihomo,广告拦截
-  - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,geolocation-cn),(RULE-SET,cn_ip,no-resolve)))))),REJECT
+  - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,cn),(RULE-SET,cn_ip,no-resolve)))))),REJECT
 
   # 代理规则
   - RULE-SET,ai,AI
