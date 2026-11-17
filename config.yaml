@@ -59,8 +59,8 @@ dns:
   listen: '[::]:1053'
   ipv6: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-range6: fdfe:dcba:9876::1/64
+  fake-ip-range: 198.18.0.0/15
+  fake-ip-range6: 2001:2::1/48
   fake-ip-filter: ['rule-set:cn', 'rule-set:connectivity-check', 'rule-set:ntp', 'rule-set:private']
   use-hosts: true
   use-system-hosts: true
@@ -478,17 +478,19 @@ rule-providers:
 
 # 自定义规则配置
 rules:
+  # 拦截规则
+  - RULE-SET,adblockmihomo,广告拦截
+
   # 直连规则
   - RULE-SET,fcm,本地直连
-  - RULE-SET,games_cn,本地直连 # 已包含 steam 下载域名
+  - RULE-SET,games_cn,本地直连 # 已包含 Steam 下载域名
   - RULE-SET,google_cn,本地直连
   - RULE-SET,microsoft_cn,本地直连
   - RULE-SET,private,本地直连
   - RULE-SET,private_ip,本地直连,no-resolve
   - RULE-SET,valve_asn,本地直连,no-resolve
 
-  # 拦截规则
-  - RULE-SET,adblockmihomo,广告拦截
+  # 禁用国外 QUIC
   - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,cn),(RULE-SET,cn_ip,no-resolve)))))),REJECT
 
   # 代理规则
