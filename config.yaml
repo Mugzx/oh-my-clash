@@ -42,6 +42,7 @@ external-ui: ui
 external-ui-name: zashboard
 external-ui-url: 'https://codeload.github.com/Zephyruso/zashboard/zip/refs/heads/gh-pages-cdn-fonts'
 mixed-port: 7892
+tproxy-port: 7894
 unified-delay: true
 tcp-concurrent: true
 
